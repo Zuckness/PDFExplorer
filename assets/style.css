@@ -1,0 +1,90 @@
+.pdf-library-container {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    overflow: visible;
+}
+.pdf-library-container {
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.pdf-library-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* SIDEBAR: Search + List */
+.pdf-library-sidebar {
+    width: 30%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+    flex-shrink: 0;
+}
+
+.pdf-search-bar,
+.pdf-search-container {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pdf-search-bar input,
+#pdfSearchInput {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Scrollable list inside sidebar */
+.pdf-list-container,
+.pdf-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.pdf-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pdf-list li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.pdf-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.pdf-meta {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Headers for category/subcategory */
+.pdf-category-header,
+.pdf-subcategory-header {
+    font-weight: bold;
+    padding: 5px 12px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* PREVIEW */
+.pdf-preview {
+    width: 70%;
+    height: 100%;
+}
+
+.pdf-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
